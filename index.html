@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <title>Checklist Complesims - Sims 4</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href=".\img\icone.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/script.js" defer></script>
+        <!-- Cette page est réalisée dans le cadre d'un projet d'études (POK1). -->
+    </head>
+    
+    <body>
+        <header>
+            <div class="banniere">
+                <h1>Complesims : la checklist ultime Sims 4</h1>
+                <nav>
+                    <a href="#">Page 1</a>
+                    <a href="#">Page 2</a>
+                    <a href="#">Page 3</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <!-- Ajouter le menu vers les autres pages du site. -->
+                 <div style="display: flex; flex-direction:row-reverse;">
+                    <div style="width: 70%;">
+                        <h2>Les règles</h2>
+                        <p>L’objectif est de faire une Super Family plus qu’un super sim tout seul. <br> Il faudra compléter :</p>
+                        <ul>
+                            <!-- Il faudra revenir faire une ancre qui renvoie aux bonnes sections, pour que la liste serve aussi de sommaire. -->
+                            <li>Toutes les <a href="#aspirations">aspirations</a> ;</li>
+                            <li>Toutes les collections et tous les crafts (en faire un musée) ;</li>
+                            <li>Toutes les <a href="#comptences">compétences</a> ;</li>
+                            <li>Toutes les carrières ;</li>
+                            <li>Tous les traits de caractères (attribuer au moins 1 fois) ;</li>
+                            <li>Toutes les peurs ;</li>
+                            <li>Tous les styles de vie ;</li>
+                            <li>Tous les types de relations sociales et sentiments ;</li>
+                            <li>Toutes les <a href="#mort">morts</a> ;</li>
+                        </ul>
+                        <p>Amusez-vous bien !</p>
+                    </div>
+                    <div style="width: 25%;"><img src=".\img\sims4.png" alt="Affiche Sims 4" height="380p" style="align-items: center; rotate : 15deg;"></div>
+                </div>
+            </section>
+            <section>
+                <h2>◈ Objectifs par génération</h2>
+                <p>◆ <a href="#" target="_self">Génération 1</a> - 🏚️ La base (basegame)</p>
+                <p>◈ <a href="#" target="_self">Génération 2</a> - 🌱 Au bouleau ! (Au Travail, Destination Nature & Voyage sur Batuu)</p>
+                <p>◇ <a href="#" target="_self">Génération 3</a> - 🧘‍♀️ Ying & Yang (Vivre ensemble, Détente au Spa, En Plein Air & Tricot de Pro) </p>
+                <p>◇ <a href="#" target="_self">Génération 4</a> - 🏙️ Un tour en ville (Vie Citadine & Au Restaurant)</p>           
+            </section>
+            <section>
+                <h2>✓ Checklist</h2>
+                <div class="checklist">
+                    <div id="filters">
+                        <h3>Paramètres</h3>
+                        <h4>Packs</h4>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <details open id="mort">
+                        <summary style="display: block;">
+                            <div>
+                                <h3>Mort</h3>
+                                <div id="totalMort" style="margin-bottom: 1em;"></div>
+                            </div>
+                        </summary>
+                        <!--- Sélection simple de la checklist + Ajout possible : étiquette pour comprendre comment compléter la mort -->
+                        <div class="conteneur">
+                            <div id="mort_01" class="box">😡 Colère</div>
+                            <div id="mort_02" class="box">🚀 Crash de fusée</div>
+                            <div id="mort_03" class="box">😳 De honte</div>
+                            <div id="mort_04" class="box">☄️ Écrasé par une météorite</div>
+                            <div id="mort_05" class="box">⚡ Electrocution</div>
+                            <div id="mort_06" class="box">🍽️ Faim</div>
+                            <div id="mort_07" class="box">🔥 Feu</div>
+                            <div id="mort_08" class="box">🤣 Hystérie</div>
+                            <div id="mort_09" class="box">🐮 Mangé(e) par une <br> plante vache</div>
+                            <div id="mort_10" class="box">🏊‍♂️ Noyade</div>
+                            <div id="mort_11" class="box">🧖 Sauna (Spa)</div>
+                            <div id="mort_12" class="box">😫 Surmenage</div>
+                            <div id="mort_13" class="box">🧓 Vieillesse</div>
+                            <div id="mort_14" class="box">🥵 Sauna (Spa)</div>
+                            <div id="mort_15" class="box">🐡 Poisson lune <br>(Vie citadine)</div>
+                        </div>
+                    </details>
+                </div>
+                <div class="checklist">
+                    <h3>Aspirations</h3>
+                    <!--- affichage par catégorie puis checklist simple -->
+                </div>
+                <div class="checklist">
+                    <h3>Compétences</h3>
+                    <!--- affichage jauge d'avancement par compétences (niveau 1, 2.. etc jusqu'à 10) -->
+                    <div id="compt_01" class="box_competences">💻 Programmation - Niv</div>
+                </div>
+                <div class="checklist">
+                    <h3>Collections</h3>
+                    <details open id="collectPS">
+                        <summary style="display: block;"><h4 open>Pierres spatiales 🌠</h4></summary>
+                        <div class="conteneur">
+                            <div id="collectPS_01" class="box_collPS"><a title="Via l'exploration en fusée" class="tooltip">Pierre spatiale commune</a></div>
+                            <div id="collectPS_02" class="box_collPS"><a title="Via l'exploration en fusée" class="tooltip">Pierre spatiale insolite</a></div>
+                            <div id="collectPS_03" class="box_collPS"><a title="Via l'exploration en fusée" class="tooltip">Grosse pierre spatiale</a></div>
+                            <div id="collectPS_04" class="box_collPS"><a title="Via l'exploration en fusée" class="tooltip">Pierre spatiale anormalement grosse</a></div>
+                        </div>
+                    </details>
+                    <!--- similaire à aspirations + étiquette pour dire comment la remplir -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <hr class="solid">
+            <p style="text-align: center; margin-top: 1.5em;"> <i>Ce site est librement inspiré de celui de <a href="https://jamesturner.yt/supersim/tracker">James Turner</a>.</i>
+            <br>Site fait par i-kebb, dans le cadre de l'option Do_It.</p>
+        </footer>
+    </body>
+</html>

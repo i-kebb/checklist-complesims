@@ -1,0 +1,168 @@
+body {
+    background-color: #1d1d1d;
+}
+
+h1,h2,h4,h5,h6,p,a,li,div{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+}
+
+h2{
+    background-color: #9265aa;
+    color: whitesmoke;
+    padding: 1.1em;
+    border-radius: 5px;
+}
+
+h2.center{
+    text-align: center;
+}
+
+summary,h3,#totalMort{
+    color: #9265aa;
+    text-align: center;
+}
+
+summary:hover,h3:hover{
+    color: rgb(219, 188, 252);
+}
+
+a:hover,h4{
+    color: #9265aa;
+}
+
+.banniere{
+    background: linear-gradient(90deg, #9265aa, #a22ebf);
+    border-radius: 5px;
+    padding: 4em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+nav a{
+    color :#ffffff;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color :#ffffff;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+main{
+    margin : 5em;
+}
+
+section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.regles-left{
+    float:left;
+    width:70%;
+    margin-top: 2em;
+ }
+ 
+.regles-right{
+     float:right;
+     width:25%;
+     margin-top: 3em;
+}
+
+.checklist{
+    border-radius: 5px;
+    border-color: #9265aa;
+    border: 3px #9265aa solid;
+    border-top: 10px #9265aa solid;
+    background-color: rgb(245, 238, 252);
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+.checklist:hover{
+    border-top: 25px #9265aa solid;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    row-gap: 1px;
+}
+
+.box, .box_collPS, .box_competences {
+    height: 1fr;
+    background-color: rgb(231, 214, 249);
+    padding: 10px;
+    color: rgb(31, 10, 47);
+    text-align: center;
+}
+
+.box:hover, .box_collPS:hover, .box_competences:hover {
+    border-style: solid;
+    border-color: rgb(219, 188, 252);
+}
+
+.box_checked, .box_collPS_checked, .box_competences_checked {
+    height: 1fr;
+    background-color: rgb(219, 188, 252);
+    padding: 10px;
+    color: rgb(31, 10, 47);
+    text-align: center;
+}
+
+.box_checked:hover, .box_collPS_checked:hover, .box_competences_checked:hover{
+    border-style: solid;
+    border-color: #9265aa;
+}
+
+hr.solid {
+    border-top: 3px double #9265aa;
+    opacity: 50%;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+    color: rgb(31, 10, 47);
+    }
+.tooltip:hover:after{
+    border-color: #1d1d1d;
+    border-radius: 5px;
+    bottom: 26px;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+    }
+.tooltip:hover:before{
+    border: solid;
+    border-color: #9265aa transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    }
+
+/*rgb(219, 188, 252)*/
